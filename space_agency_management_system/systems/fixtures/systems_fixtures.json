@@ -1,0 +1,203 @@
+[
+    {
+        "model": "systems.mission",
+        "pk": 1,
+        "fields": {
+        "mission_name": "Stellar Horizons",
+        "launch_date": "2024-12-02",
+        "mission_location": "Jupiter",
+        "mission_phase": "Launched"
+        }
+    },
+    {
+        "model": "systems.mission",
+        "pk": 2,
+        "fields": {
+        "mission_name": "Neubla Quest",
+        "launch_date": "2023-09-12",
+        "mission_location": "Neptune",
+        "mission_phase": "Completed"
+        }
+    },
+    {
+        "model": "systems.mission",
+        "pk": 3,
+        "fields": {
+        "mission_name": "Voyage Beyond",
+        "launch_date": "2024-12-02",
+        "mission_location": "Unknown",
+        "mission_phase": "Planned"
+        }
+    },
+    {
+        "model": "systems.mission",
+        "pk": 4,
+        "fields": {
+        "mission_name": "Mars Horizon",
+        "launch_date": "2026-08-24",
+        "mission_location": "Mars",
+        "mission_phase": "Planned"
+        }
+    },
+    {
+        "model": "systems.mission",
+        "pk": 5,
+        "fields": {
+        "mission_name": "Orionis Frontier",
+        "launch_date": "2030-01-01",
+        "mission_location": "Earth 2.0",
+        "mission_phase": "Planned"
+        }
+    },
+    {
+        "model": "systems.mission",
+        "pk": 6,
+        "fields": {
+        "mission_name": "Lunar Frontier",
+        "launch_date": "1974-05-16",
+        "mission_location": "The Moon",
+        "mission_phase": "Completed"
+        }
+    },
+    {
+        "model": "systems.mission",
+        "pk": 7,
+        "fields": {
+        "mission_name": "Eclipse Horizon",
+        "launch_date": "2015-07-27",
+        "mission_location": "Pluto",
+        "mission_phase": "Completed"
+        }
+    },
+    {
+        "model": "systems.mission",
+        "pk": 8,
+        "fields": {
+        "mission_name": "Comets Trail",
+        "launch_date": "2018-04-13",
+        "mission_location": "Dave's Comet",
+        "mission_phase": "Launched"
+        }
+    },
+    {
+        "model": "systems.mission",
+        "pk": 9,
+        "fields": {
+        "mission_name": "Solaris Odyssey",
+        "launch_date": "2020-06-17",
+        "mission_location": "Red Sun",
+        "mission_phase": "Launched"
+        }
+    },
+    {
+        "model": "systems.mission",
+        "pk": 10,
+        "fields": {
+        "mission_name": "Mission Zenith",
+        "launch_date": "2022-03-08",
+        "mission_location": "Earth 5.0",
+        "mission_phase": "Launched"
+        }
+    },
+    {
+        "model": "systems.astronaut",
+        "pk": 1,
+        "fields": {
+            "name": "John Doe",
+            "affilliated_space_program": "NASA",
+            "accumulated_space_time": 365,
+            "is_active": true
+        }
+    },
+    {
+        "model": "systems.astronaut",
+        "pk": 2,
+        "fields": {
+            "name": "Sally Ride",
+            "affilliated_space_program": "NASA",
+            "accumulated_space_time": 100,
+            "is_active": false
+        }
+    },
+    {
+        "model": "systems.astronaut",
+        "pk": 3,
+        "fields": {
+            "name": "Yuri Gagarin",
+            "affilliated_space_program": "Soviet Space Program",
+            "accumulated_space_time": 108,
+            "is_active": false
+        }
+    },
+    {
+        "model": "systems.astronaut",
+        "pk": 4,
+        "fields": {
+            "name": "Mae Jemison",
+            "affilliated_space_program": "NASA",
+            "accumulated_space_time": 197,
+            "is_active": false
+        }
+    },
+    {
+        "model": "systems.astronaut",
+        "pk": 5,
+        "fields": {
+            "name": "Chris Hadfield",
+            "affilliated_space_program": "Canadian Space Agency",
+            "accumulated_space_time": 200,
+            "is_active": true
+        }
+    },
+    {
+        "model": "systems.astronaut",
+        "pk": 6,
+        "fields": {
+            "name": "John Joe",
+            "affilliated_space_program": "Memphis Space",
+            "accumulated_space_time": 1000,
+            "is_active": false
+        }
+    },
+    {
+        "model": "systems.astronaut",
+        "pk": 7,
+        "fields": {
+            "name": "Blake Lively",
+            "affilliated_space_program": "Onsite Method",
+            "accumulated_space_time": 1,
+            "is_active": true
+        }
+    },
+    {
+        "model": "systems.astronaut",
+        "pk": 8,
+        "fields": {
+            "name": "Taylor Taylor",
+            "affilliated_space_program": "Twilight",
+            "accumulated_space_time": 420,
+            "is_active": true
+        }
+    },
+    {
+        "model": "systems.astronaut",
+        "pk": 9,
+        "fields": {
+            "name": "Spider Gwen",
+            "affilliated_space_program": "The Sky",
+            "accumulated_space_time": 404,
+            "is_active": false
+        }
+    },
+    {
+        "model": "systems.astronaut",
+        "pk": 10,
+        "fields": {
+            "name": "Miles Morales",
+            "affilliated_space_program": "Unkown",
+            "accumulated_space_time": 123456789,
+            "is_active": false
+        }
+    }
+
+]

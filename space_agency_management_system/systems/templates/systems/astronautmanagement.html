@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Orionis Frontier | Astronauts{% endblock %}
+
+{% block content %}
+    <section class="managementContainer">
+        <div class="astronautHeader">
+            <p id="sortStatus">Sorted By: Default</p>
+            <button class="sortButton" id="nameSort"><h1>Name</h1></button>
+            <button class="sortButton" id="programSort"><h1>Space Program</h1></button>
+            <button class="sortButton" id="timeSort"><h1>Space Time (days)</h1></button>
+            <button class="sortButton" id="statusSort"><h1>Active Status</h1></button>
+        </div>
+        <div id="astronautSection">
+            {% for astronaut in astronauts%}
+                <div class="astronautContainer">
+                    <h5>{{ astronaut.name }}</h5>
+                    <h5>{{ astronaut.affilliated_space_program }}</h5>
+                    <h5>{{ astronaut.accumulated_space_time }}</h5>
+                    <h5>{{ astronaut.is_active }}</h5>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

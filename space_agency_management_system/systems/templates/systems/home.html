@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Orionis Frontier | Home{% endblock %}
+
+{% block content %}
+<main class="homeMain">
+    <div class="homeHeader">
+        <h1>Orionis Frontier</h1>
+        <h5>Management System</h5>
+    </div>
+    <a href="{% url 'systems:astronauts' %}" class="astronautLink">Manage Astronauts</a>
+    <a href="{% url 'systems:missions' %}" class="missionLink" id="missionButton">Manage Missions</a>
+</main>
+
+{% endblock %}

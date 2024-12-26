@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Orionis Frontier | Missions{% endblock %}
+
+{% block content %}
+    <input type="text" name="missionSearch" id="missionSearch" placeholder="missionSearch">
+    <section class="managementContainer">
+        <div class="missionHeader">
+            <h1>Name</h1>
+            <h1>Launch Date</h1>
+            <h1>Mission Location</h1>
+            <h1>Mission Phase</h1>
+        </div>
+        <div id="missionSection">
+            {% for mission in missions%}
+                <div class="missionContainer">
+                    <h5>{{ mission.mission_name }}</h5>
+                    <h5>{{ mission.launch_date }}</h5>
+                    <h5>{{ mission.mission_location }}</h5>
+                    <h5>{{ mission.mission_phase }}</h5>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

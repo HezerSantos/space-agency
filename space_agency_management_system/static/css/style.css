@@ -1,0 +1,251 @@
+@font-face {
+    font-family: main;
+    src: url('../fonts/SpaceGrotesk-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: main;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(45deg, rgb(50, 28, 115), rgb(174, 168, 194));
+    box-shadow: 0 5px 5px grey;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+}
+
+header > *{
+    align-self: center;
+    justify-self: center;
+}
+
+.homeLink{
+    position: relative;
+    justify-self: start;
+    margin-left: 3rem;
+    width: 8rem;
+    height: 5vh;
+    background-color: rgb(189, 154, 41);
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+.homeMain{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(180deg, rgb(50, 28, 115), black);
+    display: grid;
+    grid: repeat(auto-fill, minmax(33%, 1fr)) / repeat(auto-fill, minmax(25%, 1fr));
+}
+
+.homeMain > *{
+    align-self: center;
+    justify-self: center;
+}
+
+.homeHeader{
+    grid-area: 1 / 2 / 2 / 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px black;
+}
+.astronautLink, .missionLink{
+    position: relative;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: rgb(189, 154, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.astronautLink:hover, .missionLink:hover, .homeLink:hover{
+    font-weight: 900;
+}
+
+
+.astronautLink{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.missionLink{
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.astronautLink::after, .missionLink::after, .homeLink::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: none;
+    border-radius: 1rem;
+}
+
+.astronautLink:hover:after, .missionLink:hover::after, .homeLink:hover::after{
+    box-shadow: 3px 3px 10px rgb(144, 114, 233);
+}
+
+.systemMain{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.managementContainer{
+    position: relative;
+    width: 65%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    overflow: auto;
+    padding: 3rem;
+    border: 2px solid rgb(50, 28, 115);
+    border-radius: 1rem;
+}
+
+#missionSection, #astronautSection{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.missionHeader, .missionContainer, .astronautHeader, .astronautContainer{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+}
+
+.missionContainer::after, .astronautContainer::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: none;
+    border-radius: 1rem;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.missionContainer:hover:after, .astronautContainer:hover::after{
+    box-shadow: 5px 5px 5px grey;
+}
+
+.missionContainer:hover > *, .astronautContainer:hover > *{
+    border-top: none;
+    border-bottom: none;
+}
+
+.missionContainer:hover h5:nth-of-type(4),
+.astronautContainer:hover h5:nth-of-type(4){
+    border-right: none;
+}
+
+.missionContainer:hover h5:nth-of-type(1),
+.astronautContainer:hover h5:nth-of-type(1){
+    border-left: none;
+}
+
+
+.missionHeader > *, .missionContainer > *,
+.astronautHeader > *, .astronautContainer > *{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+.missionHeader h1:nth-of-type(1),
+.missionContainer h5:nth-of-type(1),
+.astronautContainer h5:nth-of-type(1),
+.astronautHeader button:nth-of-type(1){
+    border-left: 2px solid black;
+    border-right: .5px solid black;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.missionHeader h1:nth-of-type(4),
+.missionContainer h5:nth-of-type(4),
+.astronautHeader button:nth-of-type(4),
+.astronautContainer h5:nth-of-type(4){
+    border-left: .5px solid black;
+    border-right: 2px solid black;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.missionHeader h1:nth-of-type(2),
+.missionContainer h5:nth-of-type(2),
+.missionHeader h1:nth-of-type(3),
+.missionContainer h5:nth-of-type(3),
+.astronautHeader button:nth-of-type(2),
+.astronautContainer h5:nth-of-type(2),
+.astronautHeader button:nth-of-type(3),
+.astronautContainer h5:nth-of-type(3){
+    border-left: .5px solid black;
+    border-right: .5px solid black;
+}
+.missionContainer > *,
+.astronautContainer > *{
+    font-size: 1rem;
+}
+
+#missionSearch{
+    width: 65%;
+    height: 5vh;
+    border-radius: 1rem;
+    border: 2px solid rgb(189, 154, 41);
+}
+
+#missionSearch:focus{
+    outline: none;
+    border-color: rgb(50, 28, 115);
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#sortStatus{
+    position: absolute;
+    top: -50%;
+    transform: translateY(-50%);
+    border: none;
+}
